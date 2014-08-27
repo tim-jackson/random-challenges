@@ -1,0 +1,35 @@
+Alien invasion
+
+Mad aliens are about to invade the earth and you are tasked with simulating the
+invasion.
+
+A map contains the names of cities in the non-existent world of X.
+The map file contains one city per line, with the city name first, followed by
+1-4 directions (north, south, east, or west). Each one represents a
+road to another city that lies in that direction.
+
+The city and each of the pairs are separated by a single space, and the
+directions are separated from their respective cities with an equals (=) sign.
+
+The program should create N aliens, where N is specified as a command-line argument.
+
+The aliens should start out at random places on the map, and wander around randomly,
+following links. On each iteration, the aliens can travel in any of the directions
+leading out of a city.
+
+When two aliens end up in the same place, they fight, and in the process kill
+each other and destroy the city. When a city is destroyed, it is removed from
+the map, and so are any roads that lead into or out of it.
+
+Once a city is destroyed, aliens can no longer travel to or through it. This
+may lead to aliens getting "trapped".
+
+The program should read in the world map, create N aliens, and
+unleash them. The program should run until all the aliens have been
+destroyed, or each alien has moved at least 10,000 times. When two aliens
+fight, print out a message like:
+
+Bar has been destroyed by alien 10 and alien 34!
+
+Once the simulation has finished, it should print out the world state in the
+same format as the input file.
